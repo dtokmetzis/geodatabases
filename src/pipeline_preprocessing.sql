@@ -1,4 +1,4 @@
---PLANNEN_2010
+--CREATE TABLE PLANNEN_2010
 
 --concat woningen_o and woningen_b
 
@@ -76,7 +76,7 @@ DROP COLUMN legenda;
 ALTER TABLE plannen_2010 
 RENAME COLUMN opm_txt TO opmerking;
 
---PLANNEN_1997
+--CREATE PLANNEN_1997
 
 --drop fields
 
@@ -137,7 +137,7 @@ RENAME COLUMN aantal TO woningen;
 ALTER TABLE plannen_1997
 ALTER COLUMN woningen TYPE numeric USING woningen::numeric;
 
---PLANNEN_2002
+--CREATE PLANNEN_2002
 
 --drop fields
 
@@ -198,7 +198,7 @@ RENAME COLUMN dateingeg TO dat_status;
 ALTER TABLE plannen_2002
 RENAME COLUMN opmalg TO opmerking;
 
---PLANNEN_2006
+--CREATE PLANNEN_2006
 
 -- drop fields
 
@@ -289,7 +289,7 @@ UPDATE plannen_2006
 SET einddatum = NULL
 WHERE einddatum = '11111111';
 
---STILL TO DO!!!!!!!!!
+--Transform dates
 
 ALTER TABLE plannen_2006
 ALTER COLUMN startdatum TYPE date USING to_date(startdatum, 'YYYYMMDD'),

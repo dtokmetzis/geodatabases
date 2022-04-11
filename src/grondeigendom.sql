@@ -144,7 +144,7 @@ UPDATE eigendom_bebouwdekom
 SET bebouwdekom = 'nee'
 WHERE bebouwdekom IS NULL;
 
---REken percentages uit
+--Reken percentages uit
 
 SELECT DISTINCT
 	e.naam_bedrijf

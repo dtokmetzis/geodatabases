@@ -79,7 +79,7 @@ WHERE
 CREATE INDEX vbo_idx ON vbo USING GIST (geom_vbo);
 CREATE INDEX pand_idx ON vbo USING GIST (geom_pand);
 
---WITH GEOPARAAT
+--CREATE BAG TABLES WITH GEOPARAAT
 
 --There are not filters yet on status fields. We can do that later.
 
